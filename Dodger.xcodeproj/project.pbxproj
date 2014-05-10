@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D72734BF191D584900D9B946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734BE191D584900D9B946 /* Foundation.framework */; };
+		D72734C1191D584900D9B946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734C0191D584900D9B946 /* CoreGraphics.framework */; };
+		D72734C3191D584900D9B946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734C2191D584900D9B946 /* UIKit.framework */; };
+		D72734C5191D584900D9B946 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734C4191D584900D9B946 /* SpriteKit.framework */; };
+		D72734CB191D584900D9B946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D72734C9191D584900D9B946 /* InfoPlist.strings */; };
+		D72734CD191D584900D9B946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D72734CC191D584900D9B946 /* main.m */; };
+		D72734D1191D584900D9B946 /* D_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72734D0191D584900D9B946 /* D_AppDelegate.m */; };
+		D72734D4191D584900D9B946 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72734D2191D584900D9B946 /* Main_iPhone.storyboard */; };
+		D72734D7191D584900D9B946 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72734D5191D584900D9B946 /* Main_iPad.storyboard */; };
+		D72734DA191D584900D9B946 /* D_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72734D9191D584900D9B946 /* D_ViewController.m */; };
+		D72734DD191D584900D9B946 /* D_MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D72734DC191D584900D9B946 /* D_MyScene.m */; };
+		D72734DF191D584900D9B946 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = D72734DE191D584900D9B946 /* Spaceship.png */; };
+		D72734E1191D584900D9B946 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72734E0191D584900D9B946 /* Images.xcassets */; };
+		D72734E8191D584900D9B946 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734E7191D584900D9B946 /* XCTest.framework */; };
+		D72734E9191D584900D9B946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734BE191D584900D9B946 /* Foundation.framework */; };
+		D72734EA191D584900D9B946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734C2191D584900D9B946 /* UIKit.framework */; };
+		D72734F2191D584900D9B946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D72734F0191D584900D9B946 /* InfoPlist.strings */; };
+		D72734F4191D584900D9B946 /* DodgerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72734F3191D584900D9B946 /* DodgerTests.m */; };
+		D72734FE191D609200D9B946 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72734FD191D609200D9B946 /* CoreData.framework */; };
+		D7273501191D60A900D9B946 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D72734FF191D60A900D9B946 /* Model.xcdatamodeld */; };
+		D7EE2B13191E6CD100033D38 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EE2B12191E6CD100033D38 /* box.png */; };
+		D7EE2B15191E6D3B00033D38 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EE2B14191E6D3B00033D38 /* particle.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D72734EB191D584900D9B946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D72734B3191D584900D9B946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D72734BA191D584900D9B946;
+			remoteInfo = Dodger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D72734BB191D584900D9B946 /* Dodger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dodger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72734BE191D584900D9B946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D72734C0191D584900D9B946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D72734C2191D584900D9B946 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D72734C4191D584900D9B946 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		D72734C8191D584900D9B946 /* Dodger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dodger-Info.plist"; sourceTree = "<group>"; };
+		D72734CA191D584900D9B946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D72734CC191D584900D9B946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D72734CE191D584900D9B946 /* Dodger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dodger-Prefix.pch"; sourceTree = "<group>"; };
+		D72734CF191D584900D9B946 /* D_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D_AppDelegate.h; sourceTree = "<group>"; };
+		D72734D0191D584900D9B946 /* D_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_AppDelegate.m; sourceTree = "<group>"; };
+		D72734D3191D584900D9B946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D72734D6191D584900D9B946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D72734D8191D584900D9B946 /* D_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D_ViewController.h; sourceTree = "<group>"; };
+		D72734D9191D584900D9B946 /* D_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_ViewController.m; sourceTree = "<group>"; };
+		D72734DB191D584900D9B946 /* D_MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D_MyScene.h; sourceTree = "<group>"; };
+		D72734DC191D584900D9B946 /* D_MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_MyScene.m; sourceTree = "<group>"; };
+		D72734DE191D584900D9B946 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		D72734E0191D584900D9B946 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D72734E6191D584900D9B946 /* DodgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DodgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72734E7191D584900D9B946 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D72734EF191D584900D9B946 /* DodgerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DodgerTests-Info.plist"; sourceTree = "<group>"; };
+		D72734F1191D584900D9B946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D72734F3191D584900D9B946 /* DodgerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DodgerTests.m; sourceTree = "<group>"; };
+		D72734FD191D609200D9B946 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D7273500191D60A900D9B946 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D7EE2B12191E6CD100033D38 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		D7EE2B14191E6D3B00033D38 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D72734B8191D584900D9B946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72734FE191D609200D9B946 /* CoreData.framework in Frameworks */,
+				D72734C1191D584900D9B946 /* CoreGraphics.framework in Frameworks */,
+				D72734C3191D584900D9B946 /* UIKit.framework in Frameworks */,
+				D72734C5191D584900D9B946 /* SpriteKit.framework in Frameworks */,
+				D72734BF191D584900D9B946 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72734E3191D584900D9B946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72734E8191D584900D9B946 /* XCTest.framework in Frameworks */,
+				D72734EA191D584900D9B946 /* UIKit.framework in Frameworks */,
+				D72734E9191D584900D9B946 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D72734B2191D584900D9B946 = {
+			isa = PBXGroup;
+			children = (
+				D72734C6191D584900D9B946 /* Dodger */,
+				D72734ED191D584900D9B946 /* DodgerTests */,
+				D72734BD191D584900D9B946 /* Frameworks */,
+				D72734BC191D584900D9B946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D72734BC191D584900D9B946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D72734BB191D584900D9B946 /* Dodger.app */,
+				D72734E6191D584900D9B946 /* DodgerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72734BD191D584900D9B946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D72734FD191D609200D9B946 /* CoreData.framework */,
+				D72734BE191D584900D9B946 /* Foundation.framework */,
+				D72734C0191D584900D9B946 /* CoreGraphics.framework */,
+				D72734C2191D584900D9B946 /* UIKit.framework */,
+				D72734C4191D584900D9B946 /* SpriteKit.framework */,
+				D72734E7191D584900D9B946 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D72734C6191D584900D9B946 /* Dodger */ = {
+			isa = PBXGroup;
+			children = (
+				D72734CF191D584900D9B946 /* D_AppDelegate.h */,
+				D72734D0191D584900D9B946 /* D_AppDelegate.m */,
+				D72734D2191D584900D9B946 /* Main_iPhone.storyboard */,
+				D72734D5191D584900D9B946 /* Main_iPad.storyboard */,
+				D72734D8191D584900D9B946 /* D_ViewController.h */,
+				D72734D9191D584900D9B946 /* D_ViewController.m */,
+				D72734DB191D584900D9B946 /* D_MyScene.h */,
+				D72734DC191D584900D9B946 /* D_MyScene.m */,
+				D72734DE191D584900D9B946 /* Spaceship.png */,
+				D72734E0191D584900D9B946 /* Images.xcassets */,
+				D72734C7191D584900D9B946 /* Supporting Files */,
+				D72734FF191D60A900D9B946 /* Model.xcdatamodeld */,
+			);
+			path = Dodger;
+			sourceTree = "<group>";
+		};
+		D72734C7191D584900D9B946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7EE2B11191E6CC100033D38 /* sound effects */,
+				D7EE2B10191E6CBA00033D38 /* images */,
+				D72734C8191D584900D9B946 /* Dodger-Info.plist */,
+				D72734C9191D584900D9B946 /* InfoPlist.strings */,
+				D72734CC191D584900D9B946 /* main.m */,
+				D72734CE191D584900D9B946 /* Dodger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D72734ED191D584900D9B946 /* DodgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D72734F3191D584900D9B946 /* DodgerTests.m */,
+				D72734EE191D584900D9B946 /* Supporting Files */,
+			);
+			path = DodgerTests;
+			sourceTree = "<group>";
+		};
+		D72734EE191D584900D9B946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D72734EF191D584900D9B946 /* DodgerTests-Info.plist */,
+				D72734F0191D584900D9B946 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7EE2B10191E6CBA00033D38 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D7EE2B14191E6D3B00033D38 /* particle.png */,
+				D7EE2B12191E6CD100033D38 /* box.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D7EE2B11191E6CC100033D38 /* sound effects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "sound effects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D72734BA191D584900D9B946 /* Dodger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72734F7191D584900D9B946 /* Build configuration list for PBXNativeTarget "Dodger" */;
+			buildPhases = (
+				D72734B7191D584900D9B946 /* Sources */,
+				D72734B8191D584900D9B946 /* Frameworks */,
+				D72734B9191D584900D9B946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dodger;
+			productName = Dodger;
+			productReference = D72734BB191D584900D9B946 /* Dodger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D72734E5191D584900D9B946 /* DodgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72734FA191D584900D9B946 /* Build configuration list for PBXNativeTarget "DodgerTests" */;
+			buildPhases = (
+				D72734E2191D584900D9B946 /* Sources */,
+				D72734E3191D584900D9B946 /* Frameworks */,
+				D72734E4191D584900D9B946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D72734EC191D584900D9B946 /* PBXTargetDependency */,
+			);
+			name = DodgerTests;
+			productName = DodgerTests;
+			productReference = D72734E6191D584900D9B946 /* DodgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D72734B3191D584900D9B946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = D_;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AppGuys;
+				TargetAttributes = {
+					D72734E5191D584900D9B946 = {
+						TestTargetID = D72734BA191D584900D9B946;
+					};
+				};
+			};
+			buildConfigurationList = D72734B6191D584900D9B946 /* Build configuration list for PBXProject "Dodger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D72734B2191D584900D9B946;
+			productRefGroup = D72734BC191D584900D9B946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D72734BA191D584900D9B946 /* Dodger */,
+				D72734E5191D584900D9B946 /* DodgerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D72734B9191D584900D9B946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72734DF191D584900D9B946 /* Spaceship.png in Resources */,
+				D72734E1191D584900D9B946 /* Images.xcassets in Resources */,
+				D72734D7191D584900D9B946 /* Main_iPad.storyboard in Resources */,
+				D7EE2B13191E6CD100033D38 /* box.png in Resources */,
+				D7EE2B15191E6D3B00033D38 /* particle.png in Resources */,
+				D72734D4191D584900D9B946 /* Main_iPhone.storyboard in Resources */,
+				D72734CB191D584900D9B946 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72734E4191D584900D9B946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72734F2191D584900D9B946 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D72734B7191D584900D9B946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72734CD191D584900D9B946 /* main.m in Sources */,
+				D72734DD191D584900D9B946 /* D_MyScene.m in Sources */,
+				D7273501191D60A900D9B946 /* Model.xcdatamodeld in Sources */,
+				D72734DA191D584900D9B946 /* D_ViewController.m in Sources */,
+				D72734D1191D584900D9B946 /* D_AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72734E2191D584900D9B946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72734F4191D584900D9B946 /* DodgerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D72734EC191D584900D9B946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D72734BA191D584900D9B946 /* Dodger */;
+			targetProxy = D72734EB191D584900D9B946 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D72734C9191D584900D9B946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72734CA191D584900D9B946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D72734D2191D584900D9B946 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72734D3191D584900D9B946 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D72734D5191D584900D9B946 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72734D6191D584900D9B946 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D72734F0191D584900D9B946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72734F1191D584900D9B946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D72734F5191D584900D9B946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D72734F6191D584900D9B946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D72734F8191D584900D9B946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dodger/Dodger-Prefix.pch";
+				INFOPLIST_FILE = "Dodger/Dodger-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D72734F9191D584900D9B946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dodger/Dodger-Prefix.pch";
+				INFOPLIST_FILE = "Dodger/Dodger-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D72734FB191D584900D9B946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dodger.app/Dodger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dodger/Dodger-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DodgerTests/DodgerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D72734FC191D584900D9B946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dodger.app/Dodger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dodger/Dodger-Prefix.pch";
+				INFOPLIST_FILE = "DodgerTests/DodgerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D72734B6191D584900D9B946 /* Build configuration list for PBXProject "Dodger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72734F5191D584900D9B946 /* Debug */,
+				D72734F6191D584900D9B946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72734F7191D584900D9B946 /* Build configuration list for PBXNativeTarget "Dodger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72734F8191D584900D9B946 /* Debug */,
+				D72734F9191D584900D9B946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72734FA191D584900D9B946 /* Build configuration list for PBXNativeTarget "DodgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72734FB191D584900D9B946 /* Debug */,
+				D72734FC191D584900D9B946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D72734FF191D60A900D9B946 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7273500191D60A900D9B946 /* Model.xcdatamodel */,
+			);
+			currentVersion = D7273500191D60A900D9B946 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D72734B3191D584900D9B946 /* Project object */;
+}
