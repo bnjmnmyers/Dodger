@@ -29,6 +29,8 @@ int touchCount;
             boxYStart = 528;
         }
         
+        [self addTimerLabel];
+        
         self.backgroundColor = [SKColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
         _box = [SKSpriteNode spriteNodeWithImageNamed:@"box"];
         _box.name = boxCategoryName;
@@ -87,8 +89,8 @@ int touchCount;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"mm:ss.SS"];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
-    NSString *timeString=[dateFormatter stringFromDate:timerDate];
-    NSLog(@"%@", timeString);
+    _timeString=[dateFormatter stringFromDate:timerDate];
+    _lblTimer.text = _timeString;
 }
 
 - (void)onStartPressed:(id)sender {
@@ -114,7 +116,18 @@ int touchCount;
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     _box.position = CGPointMake(_touchLocation.x, _touchLocation.y);
+    
     //NSLog(@"%f:%f", _touchLocation.x, _touchLocation.y);
 }
 
+- (void)addTimerLabel
+{
+    _lblTimer = [SKLabelNode labelNodeWithFontNamed:@"Courier-Bold"];
+    _lblTimer.fontSize = 22;
+    _lblTimer.text = @"00:00:00";
+    _lblTimer.position = CGPointMake(160, 500);
+    _lblTimer.fontColor = [SKColor blackColor];
+    _lblTimer.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter;
+    [self addChild:_lblTimer];
+}
 @end

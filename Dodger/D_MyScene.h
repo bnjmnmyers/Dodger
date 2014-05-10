@@ -14,6 +14,7 @@ static NSString* boxCategoryName = @"box";
 
 // UI Properties
 @property (nonatomic) SKSpriteNode *box;
+@property (nonatomic) SKLabelNode* lblTimer;
 
 // Variable Properties
 @property (nonatomic) BOOL isFingerOnBox;
@@ -21,5 +22,6 @@ static NSString* boxCategoryName = @"box";
 @property (nonatomic) CGPoint previousLocation;
 @property (nonatomic) int boxX;
 @property (nonatomic) int boxY;
+@property (nonatomic) NSString *timeString;
 
 @end
